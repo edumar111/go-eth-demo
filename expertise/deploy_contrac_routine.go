@@ -45,7 +45,7 @@ func main() {
 		go processAddress(result[idx], instance)
 		
 	}
-	time.Sleep(15* time.Second)
+	time.Sleep(10* time.Second)
 }
 func processAddress(user common.Address,instance  *expertise.Expertise ){
 	achivements,goals, err := instance .GetAchievementsIds(nil,user )
